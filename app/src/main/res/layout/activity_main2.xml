@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="375dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="510dp"
+            android:layout_height="242dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/titlecorner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KPRIPOLINEMA Pay"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/salam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlecorner"
+            app:layout_constraintVertical_bias="0.012" />
+
+
+        <TextView
+            android:id="@+id/textlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="178dp"
+            android:layout_height="198dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profil" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BELLA SONIA DWI ANGELINA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profil"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="@+id/profil"
+            app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+        <TextView
+            android:id="@+id/infoprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2041720063\nJurusan Teknologi Informasi\nPoliteknik Negeri Malang"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/nama"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/nama"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/tabungan"
+            android:layout_width="354dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="40dp"
+            android:text="Total Tabungan                                           Rp0"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/infoprofil"
+            app:layout_constraintStart_toStartOf="@+id/infoprofil"
+            app:layout_constraintTop_toBottomOf="@+id/infoprofil" />
+
+        <ImageButton
+            android:id="@+id/btnkartutabungan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tabungan"
+            app:layout_constraintTop_toBottomOf="@+id/tabungan"
+            app:layout_constraintVertical_bias="0.108"
+            app:srcCompat="@drawable/kartutabungan" />
+
+        <ImageButton
+            android:id="@+id/btnkeranjangbelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tabungan"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toEndOf="@+id/btnkartubelanja"
+            app:layout_constraintTop_toBottomOf="@+id/tabungan"
+            app:layout_constraintVertical_bias="0.108"
+            app:srcCompat="@drawable/keranjangbelanja" />
+
+        <ImageButton
+            android:id="@+id/btnkartubelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.255"
+            app:layout_constraintStart_toEndOf="@+id/btnkartutabungan"
+            app:layout_constraintTop_toBottomOf="@+id/tabungan"
+            app:layout_constraintVertical_bias="0.107"
+            app:srcCompat="@drawable/kartubelanja" />
+
+        <TextView
+            android:id="@+id/textbuttonkt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kartu Tabungan"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnkartutabungan"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toStartOf="@+id/btnkartutabungan"
+            app:layout_constraintTop_toBottomOf="@+id/btnkartutabungan"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <TextView
+            android:id="@+id/textbuttonkabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kartu Belanja"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnkartubelanja"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toStartOf="@+id/btnkartubelanja"
+            app:layout_constraintTop_toBottomOf="@+id/btnkartubelanja"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <TextView
+            android:id="@+id/textbuttonkebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keranjang Belanja"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnkeranjangbelanja"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toStartOf="@+id/btnkeranjangbelanja"
+            app:layout_constraintTop_toBottomOf="@+id/btnkeranjangbelanja"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <ImageButton
+            android:id="@+id/btnrekapsimpanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textbuttonkt"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonkt"
+            app:srcCompat="@drawable/rekapsimpanan" />
+
+        <ImageButton
+            android:id="@+id/btnrekappinjaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toEndOf="@+id/btnrekapsimpanan"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonkt"
+            app:srcCompat="@drawable/rekappinjaman" />
+
+        <ImageButton
+            android:id="@+id/btnrekapshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toEndOf="@+id/btnrekappinjaman"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonkebe"
+            app:srcCompat="@drawable/rekapshu" />
+
+        <ImageButton
+            android:id="@+id/btninfokpri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/textbuttonkebe"
+            app:layout_constraintHorizontal_bias="0.68"
+            app:layout_constraintStart_toEndOf="@+id/btnrekapshu"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonkebe"
+            app:srcCompat="@drawable/infokpri" />
+
+        <TextView
+            android:id="@+id/textbuttonrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekap\nSimpanan"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnrekapsimpanan"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnrekapsimpanan"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textbuttonrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekap\nPinjaman"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnrekappinjaman"
+            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintStart_toStartOf="@+id/btnrekappinjaman"
+            app:layout_constraintTop_toBottomOf="@+id/btnrekappinjaman"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textbuttonrshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekap\nSHU"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnrekapshu"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="@+id/btnrekapshu"
+            app:layout_constraintTop_toBottomOf="@+id/btnrekapshu"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textbuttonikp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info KPRI\nPolinema Pay"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btninfokpri"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btninfokpri"
+            app:layout_constraintTop_toBottomOf="@+id/btninfokpri"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/infoterbaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info Terbaru Saat Ini"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textbuttonrs"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="@+id/textbuttonrs"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonrs"
+            app:layout_constraintVertical_bias="0.174" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/textbuttonrshu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintStart_toEndOf="@+id/textbuttonrp"
+            app:layout_constraintTop_toBottomOf="@+id/textbuttonrp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
